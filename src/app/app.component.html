@@ -1,0 +1,32 @@
+<h1>Getting started with Angular in details</h1>
+
+<form #f="ngForm">
+
+</form>
+
+<br/>
+<br/>
+
+<app-login></app-login>
+<!-- <app-register></app-register> -->
+<br/>
+<br/>
+
+<button (click)="Count('+')">+</button>
+<button (click)="Count('-')">-</button>
+<span>{{Counter}}</span>
+<br/>
+<br/>
+
+<input type="text" #txt_Name name="nam_Name" [placeholder]=ph_Name (keyup)="SetDataName(txt_Name.value)"/>
+<br/>
+<span>Input name is {{Name_Value}}</span>
+<br/>
+<br/>
+
+<button (click)="GetData('Hello World by parameter')">Click Me</button>
+<br/>
+<br/>
+
+<div>{{Title}}</div>
+<div>Employee age is {{GetAge()}}</div>
